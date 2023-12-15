@@ -1,0 +1,287 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 10px 30px;
+  opacity: 0.4;
+}
+
+.carousel-item.active {
+  position: relative;
+}
+.carousel-item.active h2 {
+  position: absolute;
+  top: 25%;
+  font-size: 100px;
+  width: 100px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+.carousel-item.active p {
+  position: absolute;
+  top: 60%;
+  margin-left: 30px;
+  font-weight: 300;
+}
+.carousel-item.active a {
+  position: absolute;
+  top: 70%;
+  margin-left: 30px;
+  padding-top: 10px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: aliceblue;
+  color: black;
+  z-index: 10;
+}
+.carousel-item.active a:hover {
+  color: blueviolet !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 2% !important;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.navigation h1 {
+  font-size: 25px;
+  margin-left: 25px;
+  font-weight: 700;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: 73px;
+}
+.dropdown a {
+  margin-top: 7px;
+  margin-right: 14px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.831372549);
+  text-decoration: none;
+}
+
+.feartures {
+  margin: 100px 30px;
+}
+.feartures-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.feartures-header h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.feartures-header a {
+  color: black;
+  text-decoration: none;
+}
+.feartures-header a:hover {
+  color: purple;
+}
+.feartures-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.feartures-item img {
+  width: 220px;
+  height: 265px;
+  border: 2px solid rgb(181, 179, 179);
+  border-radius: 5px;
+  padding: 7px 7px;
+}
+.feartures-item strong {
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 5px;
+}
+.feartures-item p {
+  font-size: 20px;
+  opacity: 0.4;
+  padding: 3px;
+}
+
+.collection {
+  margin: 150px 30px;
+  display: grid;
+  grid-template-areas: "h1 h1 h2 " "h1 h1 h3";
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.collection .item1 {
+  grid-area: h1;
+}
+
+.collection .item2 {
+  grid-area: h2;
+}
+
+.collection .item3 {
+  grid-area: h3;
+}
+
+.item1,
+.item2,
+.item3 {
+  position: relative;
+}
+
+.item1 img {
+  height: 752px;
+  width: 738px;
+}
+
+.items-list-left {
+  width: 185px;
+  position: absolute;
+  top: 28%;
+  left: 55%;
+}
+.items-list-left span {
+  color: gray;
+  opacity: 0.4;
+  margin-bottom: 30px;
+}
+.items-list-left h3 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.items-list-left p {
+  opacity: 0.4;
+  color: gray;
+}
+.items-list-left a {
+  color: black;
+  text-decoration: none;
+}
+.items-list-left a:hover {
+  color: aliceblue;
+}
+
+.items-list {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+.items-list span {
+  color: gray;
+  opacity: 0.4;
+  margin-bottom: 30px;
+}
+.items-list h3 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.items-list p {
+  opacity: 0.4;
+  color: gray;
+}
+.items-list a {
+  color: black;
+  text-decoration: none;
+}
+.items-list a:hover {
+  color: aliceblue;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.container-list h3 {
+  font-weight: 700px;
+  margin: 10px 10px;
+}
+.container-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: gray;
+  opacity: 0.7;
+  margin-left: -20px;
+}
+.container-list p {
+  width: 262px;
+  opacity: 0.7;
+  margin-left: 13px;
+}
+
+.number {
+  font-weight: 700 !important;
+}
+
+.link {
+  font-weight: 700;
+  color: black;
+}
+
+.footer-icon i {
+  padding: 0px 5px;
+}/*# sourceMappingURL=app.css.map */

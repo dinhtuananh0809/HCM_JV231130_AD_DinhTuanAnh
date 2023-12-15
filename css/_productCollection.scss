@@ -1,0 +1,84 @@
+.collection {
+  margin: 150px 30px;
+  display: grid;
+  grid-template-areas: "h1 h1 h2 " "h1 h1 h3";
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.collection .item1 {
+  grid-area: h1;
+}
+
+.collection .item2 {
+  grid-area: h2;
+}
+
+.collection .item3 {
+  grid-area: h3;
+}
+.item1,
+.item2,
+.item3 {
+  position: relative;
+}
+.item1 img {
+  height: 752px;
+  width: 738px;
+}
+
+.items-list-left {
+  width: 185px;
+  position: absolute;
+  top: 28%;
+  left: 55%;
+
+  span {
+    color: gray;
+    opacity: 0.4;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  p {
+    opacity: 0.4;
+    color: gray;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: aliceblue;
+    }
+  }
+}
+
+.items-list {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+
+  span {
+    color: gray;
+    opacity: 0.4;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  p {
+    opacity: 0.4;
+    color: gray;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: aliceblue;
+    }
+  }
+}
